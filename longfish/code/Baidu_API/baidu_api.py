@@ -7,7 +7,7 @@ from aip import AipNlp
 
 def login2baidu():
 	'''
-	统一登录到baidu的函数
+	统一登录到baidu
 	'''
 	APP_ID = ''
 	API_KEY = ''
@@ -43,7 +43,7 @@ def short_text_similarity():
 
 def word_similarity():
 	'''
-		单词相似度
+	单词相似度
 	'''
 	client = login2baidu()
 	word1 = "北京"
