@@ -142,7 +142,7 @@ def main():
     #随机生成一个图片
     img_p = get_data_img()
     #存储图片
-    img_p.save('test.png')
+    img_p.save(os.path.join(images_dir,'test.png'))
     
     """
     #透明图片粘贴到背景图片#
