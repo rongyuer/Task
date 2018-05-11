@@ -138,8 +138,18 @@ def get_data_img():
 def main():
     #准备环境
     bs()
-    img_b = get_data_img()
-    img_b.save('1.png')
+    
+    #随机生成一个图片
+    img_p = get_data_img()
+    #存储图片
+    img_p.save('test.png')
+    
+    """
+    #透明图片粘贴到背景图片#
+    img_b = Image.open(img_path).convert("RGBA") 
+    r,g,b,a = img_b.split() 
+    img_b.paste(img_p,(w_locate,h_locate),mask = a) 
+    """
     
 if __name__ == "__main__：
     main()
